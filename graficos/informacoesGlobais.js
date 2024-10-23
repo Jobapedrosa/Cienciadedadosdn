@@ -6,8 +6,10 @@ async function vizualizarInformacoesGlobais() {
     console.log(dados)
     const paragrafo = document.createElement('p')
     paragrafo.classList.add('graficos-container__texto')
-    paragrafo.innerHTML = `Você sabia que no mundo há um total de ${dados.total_pessoas_mundo} pessoas,onde desse total a grande maioria sendo ${dados.total_pessoas_com-acesso_educacao} tem acesso a educação ,o tempo médio para estudo  é de ${dados.tempo_medio_dias_estudando} horas por dia. Porém desse total de pessoas com educação superior é de ${dados.total_pessoas_com_educacao_superior}? A educação é o caminho para atingir o sucesso que você almeja.`
+    paragrafo.innerHTML = `Você sabia que o total de pessoas no mundo é de ${dados.total_pessoas_mundo} de pessoas e que o  total de pessoas com acesso à educação é de ${dados.total_pessoas_com_acesso_a_educacao}? O tempo médio gasto por dia estudando é de ${dados.tempo_medio_dia_estudando} horas e o total de pessoas com educação superior é de ${dados.total_pessoas_com_educacao_superior}.  Será que esses dados apontam para uma realidade de um mundo esclarecido e com facilidade de acesso à Educação?
+`
     const container = document.getElementById('graficos-container')
     container.appendChild(paragrafo);
 }
+
 vizualizarInformacoesGlobais()
