@@ -21,7 +21,7 @@ async function quantidadeEstudantes() {
       plot_bgcolor: getCSS('--bg-color'),
       paper_bgcolor: getCSS('--bg-color'),
       title: {
-        text: "Redes sociais com mais usuários no mundo",
+        text: "Quantidade de Estudantes no Mundo",
         font: {
            color: getCSS('--primary-color'),
            family: getCSS('--font'),
